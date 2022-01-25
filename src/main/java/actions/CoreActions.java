@@ -1,14 +1,14 @@
 package actions;
 
 import org.openqa.selenium.By;
-//import org.openqa.selenium.TimeoutException;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-//import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import io.qameta.allure.*;
-import org.testng.Assert;
+
 public class CoreActions {
 
 	protected final WebDriver data;
@@ -22,6 +22,10 @@ public class CoreActions {
     protected void Click(By element)
     {
       data.findElement(element).click();
+    }
+    protected void click(WebElement element)
+    {
+        element.click();
     }
     protected void SubjectSelect(By element)
     {
