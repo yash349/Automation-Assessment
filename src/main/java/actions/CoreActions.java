@@ -23,6 +23,10 @@ public class CoreActions {
     {
       data.findElement(element).click();
     }
+    protected void click(WebElement element)
+    {
+        element.click();
+    }
 
     protected void SubjectSelect(By element)
     {
